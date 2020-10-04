@@ -46,13 +46,9 @@ require __DIR__ . "/discord.php";
 </div>
 <div class="container-fluid content-row">
 <h1><?php echo $array['metadata']['title'];?></h1>
-<div class="row">
-    <div class="col-sm-12 col-lg-6">
     <div class="jumbotron">
-    <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;"></iframe>
+    <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no"></iframe>
     </div>
-</div>
-</div>
 </div>
 </body>
 <?php }else{ ?>
