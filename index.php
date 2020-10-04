@@ -34,6 +34,11 @@ require __DIR__ . "/discord.php";
         <a class="nav-link" href="#">Simulcast Callendar</a>
       </li>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item">
+        <a class="nav-link" href="/logout.php">Logout</a>
+      </li>
+    <ul>
   </div>
 </nav>
 <div class="alert alert-dismissible alert-warning">

@@ -37,6 +37,11 @@ require __DIR__ . "/discord.php";
         <a class="nav-link" href="#">Simulcast Callendar</a>
       </li>
     </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item">
+        <a class="nav-link" href="/logout.php">Logout</a>
+      </li>
+    <ul>
   </div>
 </nav>
 <div class="alert alert-dismissible alert-warning">
@@ -47,7 +52,8 @@ require __DIR__ . "/discord.php";
 <div class="container">
     <div class="jumbotron">
     <h1><?php echo $array['metadata']['title'];?></h1>
-    <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no"></iframe>
+    <hr>
+    <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" frameborder="0" allowfullscreen></iframe>
     </div>
 </div>
 </body>
