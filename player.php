@@ -72,7 +72,7 @@ header_remove('x-powered-by');
   <hr class="my-4">
   <p>Login with Discord account to use the service.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="<?php echo url("", "http://localhost/login.php", "identify guilds"); ?>" role="button">Login</a>
+    <a class="btn btn-primary btn-lg" href="<?php echo url("762237345663549470", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>" role="button">Login</a>
   </p>
 </div>
 </body>

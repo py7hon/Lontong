@@ -20,7 +20,7 @@ function redirect($url){
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
-init ("http://localhost/login.php", "", "");
+init ("https://lontong.herokuapp.com/login.php", "762237345663549470", "eiwxZpD7ZegiixdGAp-6q1YYC57KP-ZF");
 get_user();
 $_SESSION['guilds'] = get_guilds();
 redirect("index.php");
