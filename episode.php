@@ -44,9 +44,9 @@ require __DIR__ . "/discord.php";
   <h4 class="alert-heading">Warning!</h4>
   <p class="mb-0">If you have a bugs please contact <a href="mailto:yukifag@pm.me" class="alert-link">yukifag@pm.me</a>.</p>
 </div>
-<div class="container-fluid content-row">
-<h1><?php echo $array['metadata']['title'];?></h1>
+<div class="container">
     <div class="jumbotron">
+    <h1><?php echo $array['metadata']['title'];?></h1>
     <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no"></iframe>
     </div>
 </div>
