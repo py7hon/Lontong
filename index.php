@@ -58,7 +58,7 @@ $array                  = json_decode($json, true);
 foreach($array["releases"] as $item) {
         echo '<div class="card mb-4 border-secondary">';
         echo '<img style="height: 100%; width: 100%; display: block;" src="'.$item["thumb"].'" alt="Card image">';
-        echo '<h3 class="card-header"><a href="episode.php?id='.$item["url"].'">Watch '.$item["anime_ep_title"].' Episode '.$item["episode"].'</a></h3>';
+        echo '<h3 class="card-header"><a href="episode.php?id='.$item["id"].'">Watch '.$item["anime_ep_title"].' Episode '.$item["episode"].'</a></h3>';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">'.$item["ep_title"].'</h5>';
         echo '<h7 class="text-muted">'.$item["ep_desc"].'</h7></div></div>';
