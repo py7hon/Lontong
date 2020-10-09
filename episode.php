@@ -31,7 +31,7 @@ require __DIR__ . "/discord.php";
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Anime List</a>
+        <a class="nav-link" href="/anime-list.php">Anime List</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Simulcast Callendar</a>
