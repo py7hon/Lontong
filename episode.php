@@ -17,6 +17,7 @@ require __DIR__ . "/discord.php";
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
+<script>function goBack() {window.history.back();}</script>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -54,6 +55,8 @@ require __DIR__ . "/discord.php";
     <h1><?php echo $array['metadata']['title'];?></h1>
     <hr>
     <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" frameborder="0" allowfullscreen></iframe>
+    <hr>
+    <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
     </div>
 </div>
 </body>
