@@ -73,8 +73,8 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <div class="media">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1169px-Attention_Sign.svg.png" class="mr-3" alt="error">
     <div class="media-body">
-    <h4>NO ACCESS</h4>
-    <h6 class="text-muted">PLEASE <a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">LOG IN</a> TO VIEW VIDEOS</h6>
+    <h5 class="mt-0">NO ACCESS</h5>
+    PLEASE <a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">LOG IN</a> TO VIEW VIDEOS
     </div>
     </div>
     <?php } ?>
