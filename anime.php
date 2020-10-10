@@ -2,6 +2,10 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
+$id                     = $_GET['id'];
+$url                    = "https://api.npoint.io/fc85e39b80fd75d36705/$id";
+$json                   = file_get_contents($url);
+$array                  = json_decode($json, true);
 $actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 <html lang="en">
@@ -92,10 +96,6 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
 </div>
 <div class="container-fluid content-row">
 <?php
-$id                     = $_GET['id'];
-$url                    = "https://api.npoint.io/fc85e39b80fd75d36705/$id";
-$json                   = file_get_contents($url);
-$array                  = json_decode($json, true);
 echo '<div class="jumbotron">';
 echo '<div class="background"><img src="'.$array['cover'].'" class="blur "></div>';
 echo '<div class="detail text-white">';
