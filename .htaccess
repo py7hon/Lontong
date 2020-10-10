@@ -1,4 +1,5 @@
 RewriteEngine On
 RewriteRule ^anime/([^/]*)$ /anime.php?id=$1 [L]
 RewriteRule ^episode/([^/]*)$ /episode.php?id=$1 [L]
+RewriteRule ^player/([^/]*)$ /player.php?id=$1 [L]
 RewriteRule ^anime-list$ /anime-list.php [L]

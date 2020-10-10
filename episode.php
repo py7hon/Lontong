@@ -57,7 +57,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <h1><?php echo $array['metadata']['title'];?></h1>
     <hr>
     <div class="embed-responsive embed-responsive-16by9">
-    <iframe class="embed-responsive-item"  src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" allowfullscreen></iframe>
+    <iframe class="embed-responsive-item"  src="/player/<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" allowfullscreen></iframe>
     </div>
     <hr>
     <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
