@@ -34,7 +34,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
         <a class="nav-link" href="/">Home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/anime-list.php">Anime List</a>
+        <a class="nav-link" href="/anime-list">Anime List</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Simulcast Callendar</a>

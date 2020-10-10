@@ -30,7 +30,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/anime-list.php">Anime List</a>
+        <a class="nav-link" href="/anime-list">Anime List</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Simulcast Callendar</a>
@@ -60,7 +60,7 @@ foreach($array["releases"] as $item) {
         echo '<div class="col-sm-12 col-lg-6">';
         echo '<div class="card mb-4 border-secondary">';
         echo '<img style="height: 100%; width: 100%; display: block;" src="'.$item["thumb"].'" alt="Card image">';
-        echo '<h3 class="card-header"><a href="episode/'.$item["id"].'">Watch '.$item["anime_ep_title"].' Episode '.$item["episode"].'</a></h3>';
+        echo '<h3 class="card-header"><a href="/episode/'.$item["id"].'">Watch '.$item["anime_ep_title"].' Episode '.$item["episode"].'</a></h3>';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">'.$item["ep_title"].'</h5>';
         echo '<h7 class="text-muted">'.$item["ep_desc"].'</h7></div></div>';
