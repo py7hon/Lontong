@@ -2,11 +2,18 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
+$actual_link = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
 ?>
 <html lang="en">
 <head>
 <title>Lontong - Free Watch Anime Simulcast</title>
 <link rel="icon" href="https://files.catbox.moe/xcncgj.png">
+<meta property="og:site_name" content="Lontong"/>
+<meta property="og:type" content="tv_show"/>
+<meta property="og:url" content="<?php echo $actual_link?>"/>
+<meta property="og:image" content="<?php echo $array['cover']?>"/>
+<meta name="title" property="og:title" content="<?php echo $array['name'] ?> - Watch on Lontong">
+<meta name="description" property="og:description" content="<?php echo $array['desc'] ?> - Watch on Lontong">
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
