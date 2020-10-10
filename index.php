@@ -61,7 +61,7 @@ foreach($array["releases"] as $item) {
         echo '<h3 class="card-header"><a href="episode.php?id='.$item["id"].'">Watch '.$item["anime_ep_title"].' Episode '.$item["episode"].'</a></h3>';
         echo '<div class="card-body">';
         echo '<h5 class="card-title">'.$item["ep_title"].'</h5>';
-        echo '<h7 class="text-muted">'.$item["ep_desc"].'</h7></div></div>';
+        echo '<h7 class="text-muted text-truncate">'.$item["ep_desc"].'</h7></div></div>';
         echo '<div class="w-100"></div>';
         echo '</div>';
 }?>
