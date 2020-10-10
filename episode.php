@@ -88,7 +88,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     </div>
     <?php } ?>
     <hr>
-    <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
+    <button type="button" class="btn btn-outline-primary" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</button>
     <button type="button" class="btn btn-outline-primary"><a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $actual_link ?>" class="popup"><i class="fab fa-facebook-f"></i> Facebook</a></button>
     <button type="button" class="btn btn-outline-primary"><a href="https://twitter.com/intent/tweet?text=<?php echo $actual_link ?>" class="popup"><i class="fab fa-twitter"></i> Twitter</a></button>
     <hr>
