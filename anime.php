@@ -96,7 +96,7 @@ foreach($array["episode"] as $item) {
             echo '<div class="col-4 col-sm-6">';
             echo '<div class="card mb-4 border-secondary">';
             echo '<img style="height: 100%; width: 100%; display: block;" src="'.$item["thumb"].'" alt="Card image">';
-            echo '<h3 class="card-header"><a href="episode.php?id='.$item["id"].'">Watch '.$array['name'].' Episode '.$item['episode'].'</a></h3>';
+            echo '<h3 class="card-header"><a href="episode/'.$item["id"].'">Watch '.$array['name'].' Episode '.$item['episode'].'</a></h3>';
             echo '<div class="card-body">';
             echo '<h5>'.$item["name"].'</h5>';
             echo '<h7 class="text-muted">'.$item["desc"].'</h7></div></div>';
