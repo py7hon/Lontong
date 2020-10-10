@@ -4,7 +4,6 @@ ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
 ?>
 <?php
-     if(isset($_SESSION['user'])){
      $id                     = $_GET['id'];
      $url                    = "https://apicr.vercel.app/?id=$id";
      $json                   = file_get_contents($url);
@@ -40,11 +39,21 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
         <a class="nav-link" href="#">Simulcast Callendar</a>
       </li>
     </ul>
+    <?php
+     if(isset($_SESSION['user'])){
+     ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
         <a class="nav-link" href="/logout.php">Logout</a>
       </li>
     <ul>
+    <?php }else{ ?>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item">
+        <a class="nav-link" href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">Login</a>
+      </li>
+    <ul>
+    <?php } ?>
   </div>
 </nav>
 <div class="alert alert-dismissible alert-warning">
@@ -56,9 +65,17 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <div class="jumbotron">
     <h1><?php echo $array['metadata']['title'];?></h1>
     <hr>
+    <?php if(isset($_SESSION['user'])){?>
     <div class="embed-responsive embed-responsive-16by9">
     <iframe class="embed-responsive-item"  src="/player/<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" allowfullscreen></iframe>
     </div>
+    <?php }else{ ?>
+    <div class="embed-responsive embed-responsive-16by9">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1169px-Attention_Sign.svg.png">
+    <h4>NO ACCESS</h4>
+    <h6 class="text-muted">PLEASE <a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">LOG IN</a> TO VIEW VIDEOS</h6>
+    </div>
+    <?php } ?>
     <hr>
     <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
     <hr>
@@ -68,6 +85,4 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
 <script>(function() {var d = document, s = d.createElement('script');s.src = 'https://lontong.disqus.com/embed.js';s.setAttribute('data-timestamp', +new Date());(d.head || d.body).appendChild(s);})();</script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
-<?php }else{ 
-header('Location: /');
-} ?>
+</html>

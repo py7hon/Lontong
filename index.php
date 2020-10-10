@@ -36,11 +36,21 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
         <a class="nav-link" href="#">Simulcast Callendar</a>
       </li>
     </ul>
+    <?php
+     if(isset($_SESSION['user'])){
+     ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
         <a class="nav-link" href="/logout.php">Logout</a>
       </li>
     <ul>
+    <?php }else{ ?>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item">
+        <a class="nav-link" href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">Login</a>
+      </li>
+    <ul>
+    <?php } ?>
   </div>
 </nav>
 <div class="alert alert-dismissible alert-warning">
@@ -69,29 +79,4 @@ foreach($array["releases"] as $item) {
 }?>
 </div>
 </body>
-<?php }else{ ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>Lontong - Free Watch Anime</title>
-<link rel="icon" href="https://files.catbox.moe/xcncgj.png">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://bootswatch.com/4/slate/bootstrap.min.css">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">
-Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy"></a>
-</nav>
-<div class="jumbotron">
-  <h1 class="display-3">Welcome!</h1>
-  <hr class="my-4">
-  <p>Login with Discord account to use the service.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="<?php echo url("762237345663549470", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>" role="button">Login</a>
-  </p>
-</div>
-</body>
-<?php } ?>
+</html>

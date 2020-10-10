@@ -3,9 +3,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
 ?>
-<?php
-     if(isset($_SESSION['user'])){
-     ?>
 <html lang="en">
 <head>
 <title>Lontong - Free Watch Anime Simulcast</title>
@@ -64,11 +61,21 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
         <a class="nav-link" href="#">Simulcast Callendar</a>
       </li>
     </ul>
+    <?php
+     if(isset($_SESSION['user'])){
+     ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
         <a class="nav-link" href="/logout.php">Logout</a>
       </li>
     <ul>
+    <?php }else{ ?>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="nav-item">
+        <a class="nav-link" href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">Login</a>
+      </li>
+    <ul>
+    <?php } ?>
   </div>
 </nav>
 <div class="alert alert-dismissible alert-warning">
@@ -107,6 +114,4 @@ echo '</div>';
 ?>
 </div>
 </body>
-<?php }else{ 
-header('Location: /');
-} ?>
+</html>
