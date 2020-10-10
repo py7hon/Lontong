@@ -94,5 +94,5 @@ header_remove('x-powered-by');
 </body>
 </html>
 <?php }else{ 
-header('Location: '.$_SERVER['SERVER_NAME']);
+header('Location: /');
 } ?>

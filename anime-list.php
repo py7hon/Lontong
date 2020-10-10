@@ -68,5 +68,5 @@ foreach($array["anime"] as $item) {
 </div>
 </body>
 <?php }else{ 
-header('Location: '.$_SERVER['SERVER_NAME']);
+header('Location: /');
 } ?>

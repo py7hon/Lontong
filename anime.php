@@ -108,5 +108,5 @@ echo '</div>';
 </div>
 </body>
 <?php }else{ 
-header('Location: '.$_SERVER['SERVER_NAME']);
+header('Location: /');
 } ?>

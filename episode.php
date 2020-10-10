@@ -65,5 +65,5 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
 </div>
 </body>
 <?php }else{ 
-header('Location: '.$_SERVER['SERVER_NAME']);
+header('Location: /');
 } ?>
