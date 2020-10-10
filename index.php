@@ -3,9 +3,6 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 require __DIR__ . "/discord.php";
 ?>
-<?php
-     if(isset($_SESSION['user'])){
-     ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
