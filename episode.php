@@ -54,7 +54,9 @@ require __DIR__ . "/discord.php";
     <div class="jumbotron">
     <h1><?php echo $array['metadata']['title'];?></h1>
     <hr>
-    <iframe src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" frameborder="0" allowfullscreen></iframe>
+    <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item"  src="player.php?id=<?php echo $id?>" height="100%" width="100%" style="border:none;" scrolling="no" allowfullscreen></iframe>
+    </div>
     <hr>
     <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
     </div>
