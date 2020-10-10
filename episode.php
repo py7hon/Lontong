@@ -61,8 +61,12 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     </div>
     <hr>
     <button type="button" class="btn btn-outline-primary" onclick="goBack()">Back</button>
+    <hr>
+    <div id="disqus_thread"></div>
     </div>
 </div>
+<script>(function() {var d = document, s = d.createElement('script');s.src = 'https://lontong.disqus.com/embed.js';s.setAttribute('data-timestamp', +new Date());(d.head || d.body).appendChild(s);})();</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 <?php }else{ 
 header('Location: /');
