@@ -83,7 +83,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <?php }else{ ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-        <a class="nav-link" href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=762237345663549470&redirect_uri=https://lontong.herokuapp.com/login.php&scope=identify%20guilds&state=4394fe3f72d24e37bfd86ab6">Login</a>
+        <a class="nav-link" href="<?php echo url("", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">Login</a>
       </li>
     <ul>
     <?php } ?>
