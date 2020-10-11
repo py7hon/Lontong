@@ -83,7 +83,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <?php }else{ ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo url("", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">Login</a>
+        <a class="nav-link" href="<?php echo url("762237345663549470", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">Login</a>
       </li>
     <ul>
     <?php } ?>

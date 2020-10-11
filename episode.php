@@ -59,7 +59,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <?php }else{ ?>
     <ul class="nav navbar-nav navbar-right">
     <li class="nav-item">
-        <a class="nav-link" href="<?php echo url("", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">Login</a>
+        <a class="nav-link" href="<?php echo url("762237345663549470", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">Login</a>
       </li>
     <ul>
     <?php } ?>
@@ -83,7 +83,7 @@ Lontong <img src="https://files.catbox.moe/xcncgj.png" width="30" height="30" cl
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Attention_Sign.svg/1169px-Attention_Sign.svg.png" height="150" width="150" class="mr-3" alt="error">
     <div class="media-body">
     <h4 class="mt-0">NO ACCESS</h4>
-    PLEASE <a href="<?php echo url("", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">LOG IN</a> TO VIEW VIDEOS
+    PLEASE <a href="<?php echo url("762237345663549470", "https://lontong.herokuapp.com/login.php", "identify guilds"); ?>">LOG IN</a> TO VIEW VIDEOS
     </div>
     </div>
     <?php } ?>
